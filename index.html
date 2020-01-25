@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="index.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="script.js"></script>
+  <script>
+    // This is just to force HTTPS (can't do it statically on glitch)
+    if(location.protocol == 'http:') location.protocol = 'https:';
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('Service Worker registered', reg))
+        .catch(err => console.error('Service Worker **not** registered', err));
+    }
+    else {
+      console.warn('Service Worker not supported in this browser');
+    }    
+  </script>
+  <title>hi</title>
+  <meta name="theme-color" content="lightblue">
+</head>
+<body>
+    <div class="header">
+  
+        <h1>A To-Do list app</h1>
+       </div>
+       <div class="app">
+        <p style="font-size:18px; font-style:bold;">To do List App</p>
+        <input type="text" id="box" placeholder="Type here to add task"/> 
+
+        <br/>
+        <br/>
+        <br/>
+        <input type="button" value="Add item" onclick="addItem();"/>
+        <br/>
+         <div id="list"></div>
+       </div>
+  
+</body>
+</html>

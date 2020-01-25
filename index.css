@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  background-color: blanchedalmond;
+
+}
+h1 {
+font-size: 24pt;
+}
+.header {
+    height:75px; 
+    background-color:lightskyblue; 
+    float: center; 
+    padding:10px; 
+    margin:20px;
+    text-align:center; 
+    font-size:24px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .app {
+    height:600px;
+   background-color:lightgreen; 
+    float: center; 
+    padding:10px; 
+    margin:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  input[type="button"] {
+   background-color: pink;
+   font-family: 'Source Sans Pro', sans-serif;
+  }
