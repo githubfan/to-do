@@ -7,19 +7,7 @@
   <link rel="canonical" href="https://codingmaster.codes/to-do">
   <link rel="manifest" href="manifest.json">
   <script src="script.js"></script>
-  <script>
-    // This is just to force HTTPS (can't do it statically on glitch)
-    if(location.protocol == 'http:') location.protocol = 'https:';
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(reg => console.log('Service Worker registered', reg))
-        .catch(err => console.error('Service Worker **not** registered', err));
-    }
-    else {
-      console.warn('Service Worker not supported in this browser');
-    }    
-  </script>
-  <title>hi</title>
+<title>hi</title>
   <meta name="theme-color" content="lightblue">
 </head>
 <body>
