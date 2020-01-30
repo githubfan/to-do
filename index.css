@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
 body {
   margin: 0;
   min-width: 250px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  
 }
 
 /* Include the padding and border in an element's total width and height */
