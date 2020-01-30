@@ -1,4 +1,6 @@
 // Create a "close" button and append it to each list item
+document.querySelector("ul").innerHTML = (localStorage.getItem("pwadata")?localStorage.getItem("pwadata"):"")
+
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -8,7 +10,6 @@ for (i = 0; i < myNodelist.length; i++) {
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
-
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
@@ -16,6 +17,7 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
+    localStorage.setItem("pwadata",document.querySelector("ul").innerHTML)
   };
 }
 
@@ -26,6 +28,7 @@ list.addEventListener(
   function(ev) {
     if (ev.target.tagName === "LI") {
       ev.target.classList.toggle("checked");
+      localStorage.setItem("pwadata",document.querySelector("ul").innerHTML)
     }
   },
   false
@@ -54,6 +57,15 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
+      localStorage.setItem("pwadata",document.querySelector("ul").innerHTML)
     };
   }
+  localStorage.setItem("pwadata",document.querySelector("ul").innerHTML)
 }
+localStorage.setItem("pwadata",document.querySelector("ul").innerHTML)
+localStorage.setItem("pwadata",document.querySelector("ul").innerHTML)
+
+  
+// wait
+//oki
+// pretty much done
