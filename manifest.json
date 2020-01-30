@@ -1,0 +1,21 @@
+{
+  "name": "Simplest PWA",
+  "short_name": "Simplest PWA",
+  "description": "The Simplest PWA possible",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "type": "image/png",
+      "src": "https://cdn.glitch.com/d7915b95-ca73-4f83-b935-551cba915e01%2Fpwa-192.png?1495987097937"
+    },
+    {
+      "sizes": "512x512",
+      "type": "image/png",
+      "src": "https://cdn.glitch.com/d7915b95-ca73-4f83-b935-551cba915e01%2Fpwa-512.png?1495987074284"
+    }
+  ],
+  "display": "standalone",
+  "background_color": "blue",
+  "theme_color": "lightblue",
+  "start_url": "/index.html"
+}
